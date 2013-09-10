@@ -1,5 +1,5 @@
 // AJAX路径定义 
-var URL_ROOT = "/shwedding"
+var URL_ROOT = "http://www.cxiit.mobi/wedding"
 var URL_OUT_ALLBLESS = URL_ROOT + "/bless/getall";
 var URL_OUT_BLESSCOUNT = URL_ROOT + "/bless/count";
 var URL_IN_SENDBLESS = URL_ROOT + "/bless/save";
