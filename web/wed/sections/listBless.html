@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<section id="listBless" class="drag" data-pull="arrow-down" data-transition="slide">
+
+	<header>
+		<nav>
+            <button data-view-section="main" data-icon="home"></button>
+        </nav>
+        <div class="centered title"ng-init="blessCount='0'">所有{{blessCount}}条祝福 </div>
+		<nav class="on-right">
+            <button data-view-section="newBless" data-icon="edit"></button>
+        	<!-- button ng-click='refresh()' data-icon="refresh"></button -->
+        </nav>
+	</header>
+
+	<article id="test" class="list scroll indented" hm-swipedown="loadBless()">
+	    <ul>
+	        <li class="color" ng-repeat="bless in blessItems">
+	            <span class="text normal">{{bless.blsContent}}</span>
+	            <small style="color:#00afe3">{{bless.blsSender}}</small>
+	            <div class="on-right">{{bless.blsSendtime}}</div>
+	        </li>
+	    </ul>
+	</article>
+
+</section>

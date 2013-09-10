@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<section id="carousel" data-transition="slide">
+    <header data-back="chevron-left">
+        <div class="centered title">新人婚纱照 <span>1</span></div>
+
+        <!-- 已用Angular+Hammer的swipe动作替代
+        nav class="on-right">
+            <a href="#" data-action="carousel" data-direction="left" data-icon="arrow-left"></a>
+            <a href="#" data-action="carousel" data-direction="right" data-icon="arrow-right"></a>
+        </nav -->
+    </header>
+    <article id="carousel-article" class="active block" data-control="carousel" >
+        <div ng-controller="PhotoCtrl">
+            <div align="center">
+                <img src="http://lorempixel.com/320/418/food/" hm-swipeleft="left()" hm-swiperight="right()"/>
+            </div>
+            <div align="center">
+                <img src="http://lorempixel.com/320/418/sports/" hm-swipeleft="left()" hm-swiperight="right()">
+            </div>
+            <div align="center">
+                <img src="http://lorempixel.com/320/418/people/" hm-swipeleft="left()" hm-swiperight="right()">
+            </div>
+            <div align="center">
+                <img src="http://lorempixel.com/320/418/abstract/" hm-swipeleft="left()" hm-swiperight="right()">
+            </div>
+            <div align="center">
+                <img src="http://lorempixel.com/320/418/city/" hm-swipeleft="left()" hm-swiperight="right()">
+            </div>
+            <div align="center">
+                <img src="http://lorempixel.com/320/418/transport/" hm-swipeleft="left()" hm-swiperight="right()">
+            </div>
+            <div align="center">
+                <img src="http://lorempixel.com/320/418/nature/" hm-swipeleft="left()" hm-swiperight="right()">
+            </div>
+            <div align="center">
+                <img src="http://lorempixel.com/320/418/fashion/" hm-swipeleft="left()" hm-swiperight="right()">
+            </div>
+            <div align="center">
+                <img src="http://lorempixel.com/320/418/technics/" hm-swipeleft="left()" hm-swiperight="right()">
+            </div>
+        </div>
+    </article>
+</section>

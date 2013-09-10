@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<section id="search" data-transition="slide" ng-controller="SearchCtrl">
+    <header data-title="相关查询" data-back="chevron-left">
+    </header>
+
+    <article id="search-article" class="list indented scroll">
+        <div class="form">
+            <fieldset data-icon="search">
+                <input type="search" id="searchKey" ng-model="searchKey" ng-change="search()" placeholder="试试输您的姓名或手机号..."/>
+            </fieldset>
+        </div>
+	    <span class="block text small align_center">可以查询为您安排的座席、酒店等</span>
+		<ul>
+	        <li class="accept">
+	            <span class="text normal">{{Seat}}</span>
+	            <small style="color:#00afe3">座席安排</small>
+	        </li>
+	    </ul>
+	    <ul>
+	        <li class="cancel">
+	            <span class="text normal">{{Room}}</span>
+	            <small style="color:#00afe3">酒店房间安排</small>
+	        </li>
+	    </ul>
+	    <ul>
+	        <li class="warning">
+	            <span class="text normal">{{Trip}}</span>
+	            <small style="color:#00afe3">行程安排</small>
+	        </li>
+	    </ul>
+	    <ul>
+	        <li class="color">
+	            <span class="text normal">{{Other}}</span>
+	            <small style="color:#00afe3">其它事宜</small>
+	        </li>
+	    </ul>
+    </article>
+    
+</section>

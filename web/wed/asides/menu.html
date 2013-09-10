@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+<aside id="menu" data-transition="left">
+    <header data-title="新婚祝福 beta1">
+    </header>
+
+    <article class="list scroll active">
+        <ul>
+       		
+            <li data-view-section="newBless" data-icon="heart">
+                <strong>送上祝福</strong>
+            </li>
+
+            <li data-view-section="listBless" data-icon="list" ng-click="loadBless()">
+                <div class="tag on-right" ng-init="blessCount='0'">{{blessCount}}</div>
+                <strong>所有祝福</strong>
+            </li>
+
+            <li data-view-section="carousel" data-icon="picture">
+                <div class="tag on-right">9</div>
+                <strong>新人婚纱照</strong>
+            </li>
+            
+            <li data-view-section="wedGuide" data-async="wed/sections/wedGuide.html" data-icon="key">
+                <strong>婚礼指南</strong>
+            </li>
+            
+            <li data-view-section="search" data-icon="search">
+                <strong>宾客查询</strong>
+            </li>
+            
+            <li data-view-section="aboutApp" data-async="wed/sections/aboutApp.html" data-icon="info-sign">
+                <strong>关于</strong>
+            </li>
+        </ul>
+    </article>
+</aside>

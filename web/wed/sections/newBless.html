@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<section id="newBless" data-transition="slide">
+
+    <header data-title="发表新祝福" data-back="chevron-left">
+    </header>
+
+    <nav data-control="groupbar">
+        <a href="#" data-view-article="textBless" data-label="文字祝福" class="active"></a>
+        <a href="#" data-view-article="gift" data-label="送礼物" data-action="sendGift"></a>
+    </nav>
+
+    <article id="textBless" class="indented scroll">
+    	<form ng-submit="submitBless()">
+	        <div class="form">
+	            <!-- LABEL + INPUT -->
+	            <fieldset class="radius shadow">
+	                <input type="text" id="blsSender" ng-model="blsSender" placeholder="您的姓名或昵称" class="large text bold align_center">
+	            </fieldset>
+	            <fieldset class="radius shadow">
+					<textarea id="blsContent" ng-model="blsContent" placeholder="在这写上您的祝福..." class="large" style="height: 10em"></textarea>
+	            </fieldset>
+				<input type="submit" id="submit" value="立即发表" class="button anchor accept"/>
+			</div>
+		</form>
+    </article>
+
+    <article id="gift">
+    	<div class="empty">
+	    	<span class="icon wrench"></span>
+	        <strong>开发中</strong>
+	        <small>等新版本出来吧~</small>
+        </div>
+	</article>
+</section>

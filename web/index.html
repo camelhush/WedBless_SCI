@@ -1,0 +1,87 @@
+<!doctype html>
+<html ng-app="shWed" id="ng-app">
+<head>
+	<meta charset="utf-8">
+    <title>20131020</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    
+	<!-- Main Stylesheet -->
+    <link rel="stylesheet" href="components/lungo/lungo.css">
+    <link rel="stylesheet" href="components/lungo/lungo.theme.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.css">
+    <!-- App Stylesheet -->
+    <link rel="stylesheet" href="components/app.css">
+    
+</head>
+
+<body style="font-family:Microsoft YaHei UI" ng-controller="TopCtrl">
+
+<!-- data-transition属性：没有该属性时浏览器缩小时下方NAV会不显示 -->
+<section id="main" data-transition="slide" data-aside="menu" class="drag">
+	
+	<header data-title="圣斌 ❤ 黄连云" style="font-weight:bold;">
+        <nav>
+            <a href="#" data-view-aside="menu" data-icon="menu"></a>
+        </nav>
+        <nav class="on-right">
+            <a href="#"><abbr class="text tiny ">13.10.20</abbr></a>
+        </nav>
+    </header>
+
+	<article id="startup" class="list indenteds scroll">
+		<ul>
+            <li class="text small">
+                <div>
+		            <div align="center">
+			        	<img id="startup-img" width="260">
+			        </div>
+        		</div>
+            </li>
+            <li>
+            	<a href="#" data-view-section="newBless" class="button cancel" data-label="送祝福 Go~~~！"></a>
+            	<a href="#" data-view-section="listBless" class="button margin-top secondary" data-label="Show祝福!" ng-click='loadBless()'></a>
+            </li>
+        </ul>
+    </article>
+    
+</section>
+
+<!-- Lungo dependencies -->
+<script src="components/quojs/quo.js"></script>
+<script src="components/lungo/lungo.js"></script>
+
+<script>
+    Lungo.init({
+        name: 'index',
+     	//预加载，以使用Angular的定义
+        resources: [
+			'wed/asides/menu.html',				
+			'wed/sections/newBless.html',
+			'wed/sections/listBless.html',
+			'wed/sections/carousel.html',
+			'wed/sections/search.html'
+		],
+        history: false
+    });
+</script>
+
+<!-- angular提供类似MVC的JS动态操作 -->
+<script src="components/angular/angular.js"></script>
+
+<!-- 让angular支持touch/swipe等操作 -->
+<script src="components/angular/hammer.js"></script>
+<script src="components/angular/jquery.hammer.js"></script>
+<script src="components/angular/angular-hammer.js"></script>
+
+<!-- 一些APP自定义的事件或方法 -->
+<script src="components/app.js"></script>
+<script src="components/controller.js"></script>
+
+</body>
+</html>
